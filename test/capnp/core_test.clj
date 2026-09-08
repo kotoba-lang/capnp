@@ -3,7 +3,7 @@
    nested struct/enum, interfaces with methods (params -> results), and the @id file header. The real
    capnp compiler validates the same output in `bb gate`."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [capnp.core :as c]))
 
 (deftest declarations

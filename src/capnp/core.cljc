@@ -13,7 +13,7 @@
                                         → interface Greeter { hi @0 (req :Text) -> (rep :Text); }
    Types are keywords (:Text :UInt32 :Bool …) or [:List t]. A file needs a 64-bit id:
      (capnp \"0xdbb9ad1f14bf0b36\" item…)  → @0x…; then the definitions."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn- id [x] (if (keyword? x) (name x) (str x)))
 
