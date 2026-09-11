@@ -1,7 +1,7 @@
 (ns capnp.core-test
   "Golden tests for kotoba.capnp — the Cap'n Proto schema hiccup. They pin numbered fields, List types,
    nested struct/enum, interfaces with methods (params -> results), and the @id file header. The real
-   capnp compiler validates the same output in `bb gate`."
+   capnp compiler validates the same output in `kbb -M:gate`."
   (:require [clojure.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [capnp.core :as c]))
